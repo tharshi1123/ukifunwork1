@@ -13,7 +13,16 @@ $(document).ready(function() {
            sound.stop();
         });
   });
-
+SC.stream('/tracks/175651162',function(sound){
+    $('#start-e2').click(function(e) {
+           e.preventDefault();
+           sound.start();
+         });
+    $('#stop-e2').click(function(e) {
+           e.preventDefault();
+           sound.stop();
+        });
+  });
  
 
   SC.stream('/tracks/310640631',function(sound){
@@ -66,7 +75,7 @@ $(document).ready(function() {
                    sound.stop();
                 });
           });
-          SC.stream('/tracks/190041205',function(sound){
+          SC.stream('/tracks/215764028',function(sound){
               $('#start-t2').click(function(e) {
                      e.preventDefault();
                      sound.start();
@@ -76,16 +85,7 @@ $(document).ready(function() {
                      sound.stop();
                   });
             });
-	 SC.stream('/tracks/175651162',function(sound){
-    $('#start-e2').click(function(e) {
-           e.preventDefault();
-           sound.start();
-         });
-    $('#stop-e2').click(function(e) {
-           e.preventDefault();
-           sound.stop();
-        });
-  });
+	 
             SC.stream('/tracks/101867210',function(sound){
                 $('#start-t3').click(function(e) {
                        e.preventDefault();
